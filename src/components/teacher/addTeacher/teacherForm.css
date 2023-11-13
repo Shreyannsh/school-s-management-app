@@ -1,0 +1,19 @@
+.addTeacherForm {
+  width: 35rem;
+  height: 15rem;
+  margin: 2rem 0rem;
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  border: 2px solid rgb(160, 160, 160);
+  box-shadow: 1px 2px 2px 1px rgb(0, 0, 0, 0.6);
+}
+
+.inputSectionTeacher {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}

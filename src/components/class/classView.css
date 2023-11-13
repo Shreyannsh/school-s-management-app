@@ -1,0 +1,52 @@
+table {
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 70%;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+td,
+th {
+  padding: 15px 20px;
+}
+
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+}
+
+tbody tr {
+  border-bottom: 1px solid #665e5e;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.filterSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vh;
+  margin-top: 1.5rem;
+}
+
+.classViewLabel {
+  font-size: larger;
+  font-weight: 400;
+}
+
+.selectBox {
+  height: 1.5rem;
+  width: 7rem;
+  margin-left: 1rem;
+}

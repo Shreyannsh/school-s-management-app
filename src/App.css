@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: sans-serif;
+}
+
+.navigationBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0rem;
+  right: 0rem;
+  padding: 0rem 0rem;
+  height: 5rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.6);
+  background-color: rgb(85, 85, 85);
+  color: azure;
+  flex-wrap: wrap;
+  position: relative;
+}
+.allPages {
+  margin-top: 0rem;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: -0.5rem;
+}
+
+.appLogo {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 1rem;
+}
+
+.appTitle {
+  font-size: 2rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: azure;
+  margin: 0rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.isActive {
+  background-color: black;
+  box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  color: azure;
+  margin: 0rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.link:hover {
+  background-color: black;
+  box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.6);
+  color: aliceblue;
+}

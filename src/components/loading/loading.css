@@ -1,0 +1,14 @@
+.laodingParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: rgb(0, 0, 0, 0.6);
+  z-index: 99;
+}
+
+.loading {
+  height: 15rem;
+  width: 15rem;
+}
