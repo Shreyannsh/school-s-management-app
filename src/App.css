@@ -21,11 +21,9 @@ h1 {
   box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.6);
   background-color: rgb(85, 85, 85);
   color: azure;
-  flex-wrap: wrap;
-  position: relative;
 }
 .allPages {
-  margin-top: 0rem;
+  margin-top: 5rem;
 }
 
 .title {
