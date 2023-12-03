@@ -1,7 +1,7 @@
 # School Management App
 
 ### Description
-School Management App is a webapp which provide features to manage schoool's students and teachers data also provide statistics of the data.
+School Management App is a responsive webapp which provide features to manage school's students and teachers data also provide statistics of the data.
 
 ## Tech Stack 
 1. React
@@ -18,7 +18,7 @@ School Management App is a webapp which provide features to manage schoool's stu
     </td>
     <td>
         <p align="center"><strong>Mobile view</strong></p>
-        <img height="80" src="https://github.com/Shreyannsh/school-s-management-app/assets/111145568/0d862d41-7059-474d-9ac2-05c6bbcf31ca"  />
+        <img width='500px' src="https://github.com/Shreyannsh/school-s-management-app/assets/111145568/0d862d41-7059-474d-9ac2-05c6bbcf31ca"  />
     </td>
 </tr>
 </table>
