@@ -11,7 +11,7 @@ export default function NavBar() {
         <div className="title">
           <img
             className="appLogo"
-            src="https://play-lh.googleusercontent.com/mnhA6D5xATymfh_B4xrhXCB6QBM5mR2_16UQkPeE8NZOQ4oaIPWEysrbP04UyhK3prs"
+            src="/assests/school managment logo.png"
             alt="logo"
           />
           <h1 className="appTitle">School Management</h1>
