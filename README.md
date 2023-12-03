@@ -11,6 +11,7 @@ School Management App is a webapp which provide features to manage schoool's stu
 5. css
 
 ![student list page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/03a725a4-8420-4f9a-ae36-dc190194af6b)
+[mockup.zip](https://github.com/Shreyannsh/school-s-management-app/files/13538915/mockup.zip)
 
 ## Features 
 A. Student's section
