@@ -51,9 +51,9 @@ D. School section
 ### Concepts used 
 1. Made on React
 2. Redux Toolkit
-   a. configureStore
-   b. Slices
-   c. createAsyncThunk
+   1. configureStore
+   2. Slices
+   3. createAsyncThunk
 4. React hooks
    1. useDispatch
    2. useSelector
