@@ -40,22 +40,21 @@ D. School section
 ### Concepts used 
 1. Made on React 
 2. React hooks
-   1. useDispatch
-   2. useSelector
-   3. useffect
+ 1. useDispatch
+ 2. useSelector
+ 3. useffect
 3. React Router
-   a. useParams
-   b. useLoction
-   c. useNavigation
-   d. Link
-5. Functional Programming 
-  a. reduce
-  b. map
-  c. arrow functions
-  d. filter
-  e. sort
-  f. conditonal rendering (small component, full page) and more
-
+ 1. useParams
+ 2. useLoction
+ 3. useNavigation
+ 4. Link
+6. Functional Programming 
+ 1. reduce
+ 2. map
+ 3. arrow functions
+ 4. filter
+ 5. sort
+ 6. conditonal rendering (small component, full page) and more
 7. CSS properties includes - Flex,Grid etc
 8. loaders
 9. alerts and more...
