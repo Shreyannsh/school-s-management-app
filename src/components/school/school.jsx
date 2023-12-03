@@ -2,6 +2,7 @@ import "./school.css";
 
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { FaSchool } from "react-icons/fa";
 
 import { updateSchoolStats } from "../../features/school/schoolSlice";
 import { setIsActive } from "../../features/student/studentSlice";
@@ -46,25 +47,31 @@ function School() {
   }, [dispatch, students]);
 
   return (
-    <div className="parent">
-      <h1 className="schoolTitle">School Statistic</h1>
-      <div className="schoolStat">
-        <p>
-          <b>Total Students : </b>
-          {totalStudents}
-        </p>
-        <p>
-          <b>Average Attendance : </b>
-          {averageAttendance.toFixed(2)} %
-        </p>
-        <p>
-          <b>Average Marks : </b>
-          {averageMarks.toFixed(2)}
-        </p>
-        <p>
-          <b>Highest Marks : </b>
-          {highestMarks.name} <i>{highestMarks.marks} </i>
-        </p>
+    <div>
+      <h1 className="schoolTitle">
+        {" "}
+        <FaSchool className="icon" />
+        School Statistic
+      </h1>
+      <div className="parentSchool">
+        <div className="schoolStat">
+          <p>{totalStudents}</p>
+          <b>Total Students </b>
+        </div>
+        <div className="schoolStat">
+          <p>{averageAttendance.toFixed(2)} %</p>
+          <b>Average Attendance</b>
+        </div>
+        <div className="schoolStat">
+          <p>{averageMarks.toFixed(2)}</p>
+          <b>Average Marks</b>
+        </div>
+        <div className="schoolStat">
+          <p>
+            {highestMarks.name} <i>{highestMarks.marks} </i>
+          </p>
+          <b>Highest Marks </b>
+        </div>
       </div>
     </div>
   );

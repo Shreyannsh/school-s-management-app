@@ -1,5 +1,5 @@
 //import "./studentDetails.css";
-import "../../../common.css";
+import "../../../styles/detailPage.css";
 
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, Link } from "react-router-dom";
@@ -36,6 +36,9 @@ function TeacherDetails() {
     <div className="parent">
       <Loading show={show} />
       <h1>Teacher Details</h1>
+      <Link className="backBtn" to="/teacherList">
+        back
+      </Link>
       <div className="detailPage">
         <div className="subSection1">
           <p>
@@ -61,7 +64,7 @@ function TeacherDetails() {
             to={`/teacherForm/edit/${particularTeacher._id}`}
             state={particularTeacher}
           >
-            Edit Student Details
+            Edit Teacher Details
           </Link>
         </div>
         <div>
@@ -69,7 +72,7 @@ function TeacherDetails() {
             className="deleteBtn"
             onClick={() => dispatch(deleteTeacherAsync(id))}
           >
-            Delete Student
+            Delete Teacher
           </button>
         </div>
       </div>

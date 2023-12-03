@@ -1,9 +1,10 @@
-import "../../../common.css";
+import "../../../styles/list.css";
 
 import { useDispatch, useSelector } from "react-redux";
 import { IoPersonAddOutline } from "react-icons/io5";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { GiTeacher } from "react-icons/gi";
 
 import { fetchTeacher } from "../../../features/teacher/teacherSlice";
 import { setIsActive } from "../../../features/student/studentSlice";
@@ -26,9 +27,13 @@ function Teacher() {
   }, [dispatch, teachers]);
 
   return (
-    <div>
+    <div className="page">
       <Loading show={show} />
-      <h1>Teachers List</h1>
+      <h1>
+        {" "}
+        <GiTeacher className="icon" />
+        Teachers List
+      </h1>
       <div className="addComponent">
         <Link className="addLink" to="/teacherForm/add/''">
           <h2>
@@ -38,8 +43,8 @@ function Teacher() {
         </Link>
       </div>
 
-      <div className="List">
-        {alphabeticSortedTeacher.length <= 0 ? (
+      <div className="list">
+        {alphabeticSortedTeacher.length <= 0 && show === false ? (
           <div className="notFoundMsg">
             <div className="message">No Teacher added Yet !</div>
           </div>

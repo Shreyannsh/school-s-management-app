@@ -1,0 +1,106 @@
+.navigationBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 0rem 1rem;
+  left: 0rem;
+  right: 0rem;
+  padding: 0rem 0rem;
+  height: 5rem;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.6);
+  background-color: rgb(85, 85, 85);
+  color: azure;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: -0.5rem;
+}
+
+.appLogo {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin: 1rem;
+}
+
+.appTitle {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.link {
+  text-decoration: none;
+  color: azure;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.isActive {
+  background-color: black;
+  box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  color: azure;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.link:hover {
+  background-color: black;
+  box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.6);
+  color: aliceblue;
+}
+
+@media (max-width: 786px) {
+  .appTitle {
+    font-size: 1.5rem;
+  }
+
+  .link {
+    text-decoration: none;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  .isActive {
+    background-color: black;
+    box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    color: azure;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 555px) {
+  .navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(85, 85, 85);
+    padding: 1rem 0rem;
+  }
+}

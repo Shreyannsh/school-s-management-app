@@ -1,5 +1,7 @@
 import "./classList.css";
 
+import { GiGraduateCap } from "react-icons/gi";
+
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { setIsActive } from "../../features/student/studentSlice";
@@ -20,8 +22,11 @@ function ClassList() {
   }, []);
 
   return (
-    <div>
-      <h1>Classes</h1>
+    <div className="page">
+      <h1>
+        <GiGraduateCap className="iconClass" />
+        Classes
+      </h1>
       <div className="classList">
         {classList.length <= 0 ? (
           <div className="notFoundMsg">
@@ -30,14 +35,30 @@ function ClassList() {
             </div>
           </div>
         ) : (
-          classList.map((className) => (
-            <li key={className} className="classComponent">
-              <Link className="classLink" to={`/classView/${className}`}>
-                <p>{className}th</p>
-                <p className="classSpell">class</p>
-              </Link>
-            </li>
-          ))
+          classList.map((className) => {
+            let gradePostfix = "th";
+            const gradePostfixFunction = () => {
+              if (className === "1") {
+                gradePostfix = "st";
+              } else if (className === "2") {
+                gradePostfix = "nd";
+              } else if (className === "3") {
+                gradePostfix = "rd";
+              }
+            };
+            gradePostfixFunction();
+            return (
+              <li key={className} className="classComponent">
+                <Link className="classLink" to={`/classView/${className}`}>
+                  <p>
+                    {className}
+                    {gradePostfix}
+                  </p>
+                  <p className="classSpell">class</p>
+                </Link>
+              </li>
+            );
+          })
         )}
       </div>
     </div>

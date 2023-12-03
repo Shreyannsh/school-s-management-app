@@ -1,13 +1,16 @@
 .addTeacherForm {
-  width: 35rem;
+  max-width: 35rem;
+  width: 80%;
+  height: 90%;
   height: 15rem;
   margin: 2rem 0rem;
-  padding: 2rem 0rem;
+  padding: 2rem 2%;
   display: flex;
   justify-content: center;
   border-radius: 10px;
-  border: 2px solid rgb(160, 160, 160);
+  border: 2px solid var(--off-white);
   box-shadow: 1px 2px 2px 1px rgb(0, 0, 0, 0.6);
+  background-color: var(--opac-black);
 }
 
 .inputSectionTeacher {
@@ -15,5 +18,15 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0rem 2rem;
+  padding: 0rem 1rem;
+}
+
+@media (max-width: 555px) {
+  .inputSectionTeacher {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0rem;
+  }
 }

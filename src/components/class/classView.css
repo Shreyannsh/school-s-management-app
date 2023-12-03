@@ -1,10 +1,24 @@
+.classViewPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.tableSection {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
 table {
   border-collapse: collapse;
   border-radius: 10px;
   overflow: hidden;
   width: 70%;
   margin: 25px 0;
-  font-size: 0.9em;
+  font-size: 1rem;
   font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -16,7 +30,7 @@ th {
 }
 
 thead tr {
-  background-color: #009879;
+  background-color: var(--green);
   color: #ffffff;
 }
 
@@ -25,28 +39,85 @@ tbody tr {
 }
 
 tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
+  background-color: rgb(242, 242, 242, 0.8);
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: rgb(157, 144, 144, 0.8);
 }
 
 tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
+  border-bottom: 2px solid var(--green);
 }
 
 .filterSection {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100vh;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 }
 
 .classViewLabel {
   font-size: larger;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .selectBox {
   height: 1.5rem;
   width: 7rem;
   margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.classBackBtn {
+  text-decoration: none;
+  color: black;
+  font-size: larger;
+  font-weight: 600;
+  position: absolute;
+  padding: 0px 10px;
+  left: 2rem;
+}
+
+.classBackBtn:hover {
+  color: var(--off-white);
+}
+
+@media (max-width: 786px) {
+  td,
+  th {
+    padding: 12px 10px;
+  }
+
+  thead tr {
+    background-color: var(--green);
+    color: #ffffff;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid #665e5e;
+  }
+
+  tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  tbody tr:last-of-type {
+    border-bottom: 2px solid var(--green);
+  }
+
+  .filterSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 555px) {
+  td,
+  th {
+    padding: 12px 10px;
+    word-break: break-all;
+  }
 }

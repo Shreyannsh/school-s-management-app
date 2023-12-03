@@ -8,7 +8,7 @@ import {
   setSortBy,
   fetchStudents,
 } from "../../features/student/studentSlice";
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router-dom";
 
 function ClassView() {
   const dispatch = useDispatch();
@@ -49,8 +49,12 @@ function ClassView() {
   }, [dispatch]);
 
   return (
-    <div className="parent">
-      <h1>{className}th Class View</h1>
+    <div className="page">
+      <Link className="classBackBtn" to="/classList">
+        back
+      </Link>
+      <h1>Class {className}</h1>
+
       <div className="filterSection">
         <div>
           <label className="classViewLabel">
@@ -80,48 +84,50 @@ function ClassView() {
           </label>
         </div>
       </div>
-      <table>
-        <thead>
-          <tr>
-            <th>
-              <b>S.No.</b>
-            </th>
-            <th>
-              <b>Name</b>
-            </th>
-            <th>
-              <b>Age</b>
-            </th>
-            <th>
-              <b>Gender</b>
-            </th>
-            <th>
-              <b>Grade</b>
-            </th>
-            <th>
-              <b>Marks</b>
-            </th>
-            <th>
-              <b>Attendance</b>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortByHandler.map(
-            ({ name, age, marks, attendance, grade, gender }, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{name}</td>
-                <td>{age}</td>
-                <td>{gender ? gender : "-"}</td>
-                <td>{grade}</td>
-                <td>{marks ? marks : "-"}</td>
-                <td>{attendance ? attendance : "-"}</td>
-              </tr>
-            )
-          )}
-        </tbody>
-      </table>
+      <div className="tableSection">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <b>S.No.</b>
+              </th>
+              <th>
+                <b>Name</b>
+              </th>
+              <th>
+                <b>Age</b>
+              </th>
+              <th>
+                <b>Gender</b>
+              </th>
+              <th>
+                <b>Grade</b>
+              </th>
+              <th>
+                <b>Marks</b>
+              </th>
+              <th>
+                <b>Attendance</b>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {sortByHandler.map(
+              ({ name, age, marks, attendance, grade, gender }, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{name}</td>
+                  <td>{age}</td>
+                  <td>{gender ? gender : "-"}</td>
+                  <td>{grade}</td>
+                  <td>{marks ? marks : "-"}</td>
+                  <td>{attendance ? attendance : "-"}</td>
+                </tr>
+              )
+            )}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
