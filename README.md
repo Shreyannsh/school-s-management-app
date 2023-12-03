@@ -38,7 +38,7 @@ D. School section
   Data's claculated statistics displayed
   
 ### Concepts used 
-1.Made on React 
+1. Made on React 
 2. React hooks
   a. useDispatch
   b. useSelector
@@ -55,16 +55,22 @@ D. School section
   d. filter
   e. sort
   f. conditonal rendering (small component, full page) and more
-  
-6. CSS properties includes - Flex,Grid etc
-7. loaders
-8. alerts and more...
+
+7. CSS properties includes - Flex,Grid etc
+8. loaders
+9. alerts and more...
 
 
 ## Snaps
+
 ![add student page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/83ef0f58-6eb2-4f3a-8d97-51e444d05fe0)
-![student detail page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/fc613499-ccca-46c2-8b28-f50607c08006)
+
 ![class list page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/eadf0cd9-cf6e-455a-8d31-cd7ab1ff9dcc)
+
 ![class view page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/8e066bf6-8b5b-4684-9bd1-5c79a4ae240a)
+
+![student detail page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/fc613499-ccca-46c2-8b28-f50607c08006)
+
 ![school statistic page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/651fd3c0-4b5d-499d-8914-eceb33b37bfb)
+
 ![add teacher page](https://github.com/Shreyannsh/school-s-management-app/assets/111145568/11fc8348-15d9-4be6-a462-37407909e211)
