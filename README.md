@@ -49,13 +49,17 @@ D. School section
   Data's claculated statistics displayed
   
 ### Concepts used 
-1. Made on React 
-2. React hooks
+1. Made on React
+2. Redux Toolkit
+   a. configureStore
+   b. Slices
+   c. createAsyncThunk
+4. React hooks
    1. useDispatch
    2. useSelector
    3. useState
    4. useffect
-3. React Router
+5. React Router
    1. useParams
    2. useLoction
    3. useNavigation
