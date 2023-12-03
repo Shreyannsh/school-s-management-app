@@ -53,7 +53,8 @@ D. School section
 2. React hooks
    1. useDispatch
    2. useSelector
-   3. useffect
+   3. useState
+   4. useffect
 3. React Router
    1. useParams
    2. useLoction
