@@ -46,7 +46,7 @@ C. Teacher section
   5. Individual student detail page
 
 D. School section
-  Data's claculated statistics displayed
+  Data's calculated statistics displayed
   
 ### Concepts used 
 1. Made on React
@@ -70,7 +70,7 @@ D. School section
    3. arrow functions
    4. filter
    5. sort
- 6. conditonal rendering (small component, full page) and more
+ 6. conditional rendering (small component, full page) and more
 7. CSS properties includes - Flex,Grid etc
 8. loaders
 9. alerts and more...
