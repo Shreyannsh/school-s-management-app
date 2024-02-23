@@ -15,6 +15,7 @@ function StudentView() {
   const dispatch = useDispatch();
 
   const { students, status, show } = useSelector((state) => state.students);
+
   useEffect(() => {
     if (status === "idle") {
       dispatch(fetchStudents());
